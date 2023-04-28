@@ -21,7 +21,7 @@ public class ClimateChange {
         listOfSDGs.add(sdg3);
         listOfSDGs.add(sdg1);
 
-        EnvironmentalPolicy carbonPricing = new EnvironmentalPolicy()'')
+        EnvironmentalPolicy carbonPricing = new EnvironmentalPolicy();
         EnvironmentalPolicy technologySubsidies = new EnvironmentalPolicy( null, null, 0, null, null, null);
 
         listOfEnvironmentalPolicies.add(carbonPricing);
