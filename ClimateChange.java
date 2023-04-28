@@ -16,8 +16,8 @@ public class ClimateChange {
         listOfRenewableEnergies.add(solar);
         listOfRenewableEnergies.add(wind);
 
-        SustainableDevelopment sdg1 = new SustainableDevelopment( null, null, 0, null, null, 0);
-        SustainableDevelopment sdg3 = new SustainableDevelopment( null, null, 0, null, null, 0);
+        SustainableDevelopment sdg1 = new SustainableDevelopment( "null", "null", 0, "null", "null","null", 0);
+        SustainableDevelopment sdg3 = new SustainableDevelopment( "null", "ull", 0, "null", "null","null", 0);
         listOfSDGs.add(sdg3);
         listOfSDGs.add(sdg1);
 
@@ -33,27 +33,39 @@ public class ClimateChange {
         Scanner input= new Scanner(System.in);
         int userInput1= Integer.parseInt(input.nextLine());
 
-        if (userInput1==3)
+        int index=0;
+        String userInput2;
+        if (userInput1==1)
         {
-            for (int i=0; i<listOfEnvironmentalPolicies.size();i++)
+            do
             {
-                System.out.println(listOfEnvironmentalPolicies.get(i).displayInfo());
-            }
+            listOfSDGs.get(index).displayInfo();
+            index++;
+
+            System.out.println("Do you want to know more? Yes/No?");
+             userInput2= input.nextLine();
+
+            } while(index<listOfSDGs.size() && userInput2=="Yes");
+
+        }
+        else if (userInput1==2)
+        {
+            do
+            {
+            listOfSDGs.get(index).displayInfo();
+            index++;
+
+            System.out.println("Do you want to know more? Yes/No?");
+             userInput2= input.nextLine();
+
+            } while(index<listOfSDGs.size() && userInput2=="Yes");
 
         }
         else if (userInput1==3)
         {
             for (int i=0; i<listOfEnvironmentalPolicies.size();i++)
             {
-                System.out.println(listOfEnvironmentalPolicies.get(i).displayInfo());
-            }
-
-        }
-        else if (userInput1==3)
-        {
-            for (int i=0; i<listOfEnvironmentalPolicies.size();i++)
-            {
-                System.out.println(listOfEnvironmentalPolicies.get(i).displayInfo());
+                listOfEnvironmentalPolicies.get(i).displayInfo();
             }
 
         }
