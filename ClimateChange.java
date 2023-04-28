@@ -1,26 +1,69 @@
+import java.util.ArrayList; 
+import java.util.Scanner;
+
 public class ClimateChange {
 
 
     public static void main (String [] args){
 
-        
-        
-        RenewableEnergy Adapt = new RenewableEnergy("yh","yh","yh",89,"solar",35,1000);
+        ArrayList<SustainableDevelopment> listOfSDGs = new ArrayList<SustainableDevelopment>();
+        ArrayList<EnvironmentalPolicy> listOfEnvironmentalPolicies = new ArrayList<EnvironmentalPolicy>();
+        ArrayList<RenewableEnergy> listOfRenewableEnergies = new ArrayList<RenewableEnergy>();        
 
-        // RenewableEnergy renew = new RenewableEnergy();
-        // renew.setBenefits("Prevents the depletion of Ozone layer");
-        // renew.setLimitations("Release of harmful gases into atmosphere");
-        // renew.setType("Solar Energy");
-        
-        // RenewableEnergy renew2 = new RenewableEnergy();
-        // renew2.setBenefits("Generate Turbine power without pollution");
-        // renew2.setLimitations("Prevents pollution");
-        // renew2.setType("Wind energy");
 
-        // EnvironmentalPolicy environ = new EnvironmentalPolicy();
-        // environ.setPolicyName("Afforestation");
-        // environ.setPolicyDescription("Planting of new trees and replacing already cut down trees");
-        // environ.setPolicyType("Planting"); 
+        RenewableEnergy solar = new RenewableEnergy("String benefits", "String limitations",60,"solar",50,200);
+        RenewableEnergy wind = new RenewableEnergy("String benefits", "String limitations",60,"wind",50,200);
+        listOfRenewableEnergies.add(solar);
+        listOfRenewableEnergies.add(wind);
+
+        SustainableDevelopment sdg1 = new SustainableDevelopment( null, null, 0, null, null, 0);
+        SustainableDevelopment sdg3 = new SustainableDevelopment( null, null, 0, null, null, 0);
+        listOfSDGs.add(sdg3);
+        listOfSDGs.add(sdg1);
+
+        EnvironmentalPolicy carbonPricing = new EnvironmentalPolicy( null, null, 0, null, "", null);
+        EnvironmentalPolicy technologySubsidies = new EnvironmentalPolicy( null, null, 0, null, null, null);
+
+        listOfEnvironmentalPolicies.add(carbonPricing);
+        listOfEnvironmentalPolicies.add(technologySubsidies);
+
+        System.out.println("Hello! This is Climate Change Educator!");
+        System.out.println("What solution do you want to learn about today?\n1- Sustainable Development\n2- Renewable Energy\n3- Environmental Policy");
+
+        Scanner input= new Scanner(System.in);
+        int userInput1= Integer.parseInt(input.nextLine());
+
+        if (userInput1==3)
+        {
+            for (int i=0; i<listOfEnvironmentalPolicies.size();i++)
+            {
+                System.out.println(listOfEnvironmentalPolicies.get(i).displayInfo());
+            }
+
+        }
+        else if (userInput1==3)
+        {
+            for (int i=0; i<listOfEnvironmentalPolicies.size();i++)
+            {
+                System.out.println(listOfEnvironmentalPolicies.get(i).displayInfo());
+            }
+
+        }
+        else if (userInput1==3)
+        {
+            for (int i=0; i<listOfEnvironmentalPolicies.size();i++)
+            {
+                System.out.println(listOfEnvironmentalPolicies.get(i).displayInfo());
+            }
+
+        }
+        else
+        {
+            System.out.println("Enter a valid option:");
+        }
+        
+
+
 
         // SustainableDevelopment sustain = new SustainableDevelopment();
         // sustain.setGoals("Healing the environment");

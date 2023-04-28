@@ -4,7 +4,7 @@ public class RenewableEnergy extends AdaptationStrategies {
     private double cost; 
 
 
-    public RenewableEnergy(String strategyName,String benefits, String limitations,double successRate,String energyType,double capacity,double cost){
+    public RenewableEnergy(String benefits, String limitations,double successRate,String energyType,double capacity,double cost){
         super("Using Renewable Energy Sources", benefits, limitations, successRate);
         this.energyType=energyType;
         this.capacity=capacity;

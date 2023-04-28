@@ -1,9 +1,9 @@
 public class AdaptationStrategies {
 
-    private String strategyName;
-    private String benefits;
-    private String limitations;
-    private double successRate;
+    protected String strategyName;
+    protected String benefits;
+    protected String limitations;
+    protected double successRate;
 
     public AdaptationStrategies(String strategyName,String benefits,String limitations,double successRate){
         setLimitations(limitations);
