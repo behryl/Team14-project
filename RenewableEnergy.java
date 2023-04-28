@@ -111,5 +111,6 @@ public class RenewableEnergy extends AdaptationStrategies {
         System.out.println("Type of Renewable Energy:" + getEnergyType());
         System.out.println("Benefits of "+getEnergyType()+" energy\n: " + getBenefits());
         System.out.println("Limitations of "+getEnergyType()+" energy\n: " + getLimitations());
+        System.out.println("Future predictions\n: " + predictFutureEnergyProduction());
     }
 }

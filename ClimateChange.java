@@ -16,8 +16,8 @@ public class ClimateChange {
         listOfRenewableEnergies.add(solar);
         listOfRenewableEnergies.add(wind);
 
-        SustainableDevelopment sdg1 = new SustainableDevelopment("Encourages innovation and investment in cleaner technologies\n Creates financial incentive for businesses to reduce carbon emissions", "Leads to higher energy costs for consumers\n Implementation can be challenging due to political opposition", 10, "Carbon Pricing", "Reduce carbon emissions", "Reduce green house gases and reduce company carbon footprints", 2008);
-        SustainableDevelopment sdg3 = new SustainableDevelopment( "", "ull", 0, "null", "null","null", 0);
+        SustainableDevelopment sdg1 = new SustainableDevelopment("Encourages innovation and investment in cleaner technologies \nCreates financial incentive for businesses to reduce carbon emissions", "Leads to higher energy costs for consumers\n Implementation can be challenging due to political opposition", 10, "Carbon Pricing", "Reduce carbon emissions", "Reduce green house gases and reduce company carbon footprints", 2008);
+        SustainableDevelopment sdg3 = new SustainableDevelopment("Complements other policies like the carbon pricing \nCreates jons and spurs economic growth in the clean sector", "Can be expensive to implement\n May be ineffective if subsidiarie", 10, "Technology Subsidies", "Reduce carbon emissions", "Reduce green house gases and reduce company carbon footprints", 2008);
         listOfSDGs.add(sdg3);
         listOfSDGs.add(sdg1);
 
