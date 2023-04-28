@@ -28,13 +28,20 @@ public class ClimateChange {
         listOfEnvironmentalPolicies.add(technologySubsidies);
 
         System.out.println("Hello! This is Climate Change Educator!");
+
+        String userInput2;
+        String userInput3;
+        int userInput1;
+        System.out.println("------------------------------------------------------------------------");
+        do{
         System.out.println("What solution do you want to learn about today?\n1- Sustainable Development\n2- Renewable Energy\n3- Environmental Policy");
 
         Scanner input= new Scanner(System.in);
-        int userInput1= Integer.parseInt(input.nextLine());
+         userInput1= Integer.parseInt(input.nextLine());
 
         int index=0;
-        String userInput2;
+
+
         if (userInput1==1)
         {
             do
@@ -45,20 +52,20 @@ public class ClimateChange {
             System.out.println("Do you want to know more? Yes/No?");
              userInput2= input.nextLine();
 
-            } while(index<listOfSDGs.size() && userInput2=="Yes");
+            } while(index<listOfSDGs.size() && userInput2.equalsIgnoreCase("Yes"));
 
         }
         else if (userInput1==2)
         {
             do
             {
-            listOfSDGs.get(index).displayInfo();
+            listOfRenewableEnergies.get(index).displayInfo();
             index++;
 
             System.out.println("Do you want to know more? Yes/No?");
              userInput2= input.nextLine();
 
-            } while(index<listOfSDGs.size() && userInput2=="Yes");
+            } while(index<listOfRenewableEnergies.size() && userInput2=="Yes");
 
         }
         else if (userInput1==3)
@@ -74,7 +81,10 @@ public class ClimateChange {
             System.out.println("Enter a valid option:");
         }
         
+        System.out.println("Do you want to continue learning? Yes/No?");
+        userInput3=input.nextLine();
 
+        }while(userInput3.equalsIgnoreCase("Yes"));
 
 
         // SustainableDevelopment sustain = new SustainableDevelopment();

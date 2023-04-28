@@ -56,7 +56,7 @@ public class SustainableDevelopment extends AdaptationStrategies {
     
 
     public void displayInfo(){
-        System.out.println("The SDG is: " + get());
+        System.out.println("The SDG is: " + getGoalName());
         System.out.println("Goals: " + getGoals());
         System.out.println("Indicators: " + getIndicators());
 
