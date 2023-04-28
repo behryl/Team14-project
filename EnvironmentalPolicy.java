@@ -4,9 +4,7 @@ public class EnvironmentalPolicy {
     private String policyDescription;
     private String policyType;
 
-    public EnvironmentalPolicy( String policyName,String policyDescription,String policyType){
-
-    }
+//HIlllo
     public String getPolicyName(){
         return this.policyName;
     }
