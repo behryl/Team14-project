@@ -8,7 +8,6 @@ public class SustainableDevelopment extends AdaptationStrategies {
         this.indicators=indicators;
     }
 
-
     public String getGoals(){
         return this.goals;
     }
@@ -25,11 +24,16 @@ public class SustainableDevelopment extends AdaptationStrategies {
         this.indicators = indicators;
     }
 
-    public void displayInfo(){
-        System.out.println("Goals: " + getGoals());
-        System.out.println("Indicators: " + getIndicators());
+    // public String evaluateImpact()
+    // {
 
-    }
+    // }
+
+    // public void displayInfo(){
+    //     System.out.println("Goals: " + getGoals());
+    //     System.out.println("Indicators: " + getIndicators());
+
+    // }
     
     
 }
