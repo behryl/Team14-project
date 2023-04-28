@@ -1,42 +1,34 @@
-public class RenewableEnergy {
+public class RenewableEnergy extends AdaptationStrategies {
     private String type;
-    private String benefits;
-    private String limitations;
+    private String storageType;
 
-    public RenewableEnergy(){
-    type=null;
-     benefits=null;
-      limitations=null;
+    public RenewableEnergy(String strategyName,String benefits, String limitations, double successRate,String type,String storageType){
+    super(strategyName, benefits, limitations, successRate);
+    this.type=type;
+    this.storageType=storageType;
     }
 
     public String getType(){
         return this.type;
-    }
-
-    public String getBenefits(){
-        return this.benefits;
-    }
-
-    public String getLimitations(){
-        return this.limitations;
     }
     
     public void setType(String type){
         this.type = type;
     }
 
-    public void setBenefits(String benefits){
-        this.benefits = benefits;
+    public String getStorageType() {
+        return storageType;
     }
 
-    public void setLimitations(String limitations){
-        this.limitations= limitations;
+    public void setStorageType(String storageType) {
+        this.storageType = storageType;
     }
+    
 
-    public void displayInfo(){
-        System.out.println("Type of Renewable Energy: " + getType());
-        System.out.println("Limitation Renewable Energy: " + getLimitations());
-        System.out.println("Benefit of Renewable Energy: " + getBenefits());
+    // public void displayInfo(){
+    //     System.out.println("Type of Renewable Energy: " + getType());
+    //     System.out.println("Limitation Renewable Energy: " + getLimitations());
+    //     System.out.println("Benefit of Renewable Energy: " + getBenefits());
 
     }
 }

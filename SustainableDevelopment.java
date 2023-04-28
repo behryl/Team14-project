@@ -1,6 +1,13 @@
-public class SustainableDevelopment {
+public class SustainableDevelopment extends AdaptationStrategies {
     private String goals;
     private String indicators;
+
+    public SustainableDevelopment(String strategyName,String benefits, String limitations, double successRate,String indicators,String goals){
+        super(strategyName, benefits, limitations, successRate);
+        this.goals=goals;
+        this.indicators=indicators;
+    }
+
 
     public String getGoals(){
         return this.goals;

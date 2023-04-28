@@ -2,6 +2,8 @@ public class Main {
 
 
     public static void main (String [] args){
+
+        
         AdaptationStrategies Adapt = new AdaptationStrategies("Avoid bush burning", "Depletion of Ozone layer");
 
         RenewableEnergy renew = new RenewableEnergy();

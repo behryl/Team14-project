@@ -1,34 +1,51 @@
 public class AdaptationStrategies {
 
-    private String strategies;
-    private String risks;
+    private String strategyName;
+    private String benefits;
+    private String limitations;
+    private double successRate;
 
-
-    public AdaptationStrategies(String strategies, String risks){
-        setStrategies(strategies);
-        setRisks(risks);
+    public AdaptationStrategies(String strategyName,String benefits, String limitations, double successRate){
+        setLimitations(limitations);
+        setBenefits(benefits);
+        setStrategyName(strategyName);
+        setSuccessRate(successRate);
     }
 
-    public String getStrategies(){
-        return this.strategies;
+    public String getStrategyName() {
+        return strategyName;
     }
 
-    public String getRisks(){
-        return this.risks;
+    public void setStrategyName(String strategyName) {
+        this.strategyName = strategyName;
     }
 
-    public void setStrategies(String strategies){
-        this.strategies = strategies;
+    public String getBenefits() {
+        return benefits;
+    }
+    public void setBenefits(String benefits) {
+        this.benefits = benefits;
     }
 
-    public void setRisks(String risks){
-        this.risks = risks;
+    public String getLimitations() {
+        return limitations;
+    }
+    public void setLimitations(String limitations) {
+        this.limitations = limitations;
+    }
+
+    public double getSuccessRate() {
+        return successRate;
+    }
+    public void setSuccessRate(double successRate) {
+        this.successRate = successRate;
     }
 
     public void displayInfo(){
-        System.out.println("Strategies: " + getStrategies());
-        System.out.println("Risk: " + getRisks());
+        System.out.println("Risk: " + setBenefits());
+        System.out.println("Strategies: " + setSuccessRate());
+        System.out.println("Strategies: " + setLimitations());
 
     }
-    
+
 }
