@@ -18,6 +18,22 @@ public class RenewableEnergy extends AdaptationStrategies {
         return energyType;
     }
 
+    public void setCapacity(double capacity) {
+        this.capacity = capacity;
+    }
+
+    public double getCapacity() {
+        return capacity;
+    }
+
+    public void setCost(double cost) {
+        this.cost = cost;
+    }
+
+    public double getCost() {
+        return cost;
+    }
+
     public double predictFutureEnergyProduction()
     {
         if (this.energyType.equalsIgnoreCase("solar")){
@@ -43,10 +59,9 @@ public class RenewableEnergy extends AdaptationStrategies {
         }
     }
 
-    // public void displayInfo(){
-    //     System.out.println("Type of Renewable Energy: " + getType());
-    //     System.out.println("Limitation Renewable Energy: " + getLimitations());
-    //     System.out.println("Benefit of Renewable Energy: " + getBenefits());
-
-    // }
+    public void displayInfo(){
+        System.out.println("Type of Renewable Energy: " + getEnergyType());
+        System.out.println("Benefits of "+getEnergyType()+" energy: " + getBenefits());
+        System.out.println("Limitations of "+getEnergyType()+" energy: " + getLimitations());
+    }
 }

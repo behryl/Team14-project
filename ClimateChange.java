@@ -5,7 +5,7 @@ public class ClimateChange {
 
         
         
-        // AdaptationStrategies Adapt = new AdaptationStrategies("Avoid bush burning", "Depletion of Ozone layer");
+        AdaptationStrategies Adapt = new AdaptationStrategies("start","yh","yh",double successRate);
 
         // RenewableEnergy renew = new RenewableEnergy();
         // renew.setBenefits("Prevents the depletion of Ozone layer");

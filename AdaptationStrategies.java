@@ -5,7 +5,7 @@ public class AdaptationStrategies {
     private String limitations;
     private double successRate;
 
-    public AdaptationStrategies(String strategyName,String benefits, String limitations, double successRate){
+    public AdaptationStrategies(String strategyName,String benefits,String limitations,double successRate){
         setLimitations(limitations);
         setBenefits(benefits);
         setStrategyName(strategyName);
