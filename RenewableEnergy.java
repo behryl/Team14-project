@@ -23,7 +23,11 @@ public class RenewableEnergy extends AdaptationStrategies {
     public void setStorageType(String storageType) {
         this.storageType = storageType;
     }
-    
+
+    // public double calculateEnergyCost()
+    // {
+
+    // }
 
     // public void displayInfo(){
     //     System.out.println("Type of Renewable Energy: " + getType());

@@ -36,6 +36,11 @@ public class EnvironmentalPolicy extends AdaptationStrategies{
         this.policyType= policyType;
     }
 
+    // public EnvironnmentalPolicy suggestAlternativePolicy()
+    // {
+        
+    // }
+
     public void displayInfo(){
         System.out.println("Policy Name: " + getPolicyName());
         System.out.println("Policy Description: " + getpolicyDescription());
