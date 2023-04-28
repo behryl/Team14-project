@@ -1,6 +1,8 @@
 public class SustainableDevelopment extends AdaptationStrategies {
     private String goals;
     private String indicators;
+    private int yearOfImplementation;
+    private static final CURRENT_YEAR=2023;
 
     public SustainableDevelopment(String strategyName,String benefits, String limitations, double successRate,String indicators,String goals){
         super(strategyName, benefits, limitations, successRate);
