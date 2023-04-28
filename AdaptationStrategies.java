@@ -41,11 +41,11 @@ public class AdaptationStrategies {
         this.successRate = successRate;
     }
 
-    // public void displayInfo(){
-    //     System.out.println("Risk: " + setBenefits());
-    //     System.out.println("Strategies: " + setSuccessRate());
-    //     System.out.println("Strategies: " + setLimitations());
+    public void displayInfo(){
+        System.out.println("Risk: " + setBenefits());
+        System.out.println("Strategies: " + setSuccessRate());
+        System.out.println("Strategies: " + setLimitations());
 
-    // }
+    }
 
 }
