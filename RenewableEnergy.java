@@ -1,38 +1,52 @@
 public class RenewableEnergy extends AdaptationStrategies {
-    private String type;
-    private String storageType;
+    private String energyType;
+    private double capacity;
+    private double cost; 
 
-    public RenewableEnergy(String strategyName,String benefits, String limitations, double successRate,String type,String storageType){
-    super(strategyName, benefits, limitations, successRate);
-    this.type=type;
-    this.storageType=storageType;
+
+    public RenewableEnergy(String strategyName,String benefits, String limitations,double successRate,String energyType,double capacity,double cost){
+        super("Using Renewable Energy Sources", benefits, limitations, successRate);
+        this.energyType=energyType;
+        this.capacity=capacity;
+        this.cost=cost;
     }
 
-    public String getType(){
-        return this.type;
+    public void setEnergyType(String energyType) {
+        this.energyType = energyType;
     }
-    
-    public void setType(String type){
-        this.type = type;
-    }
-
-    public String getStorageType() {
-        return storageType;
+    public String getEnergyType() {
+        return energyType;
     }
 
-    public void setStorageType(String storageType) {
-        this.storageType = storageType;
+    public double predictFutureEnergyProduction()
+    {
+        if (this.energyType.equalsIgnoreCase("solar")){
+            return 28;
+        }
+        else if (this.energyType.equalsIgnoreCase("wind")){
+            return 23;
+        }
+        else if (this.energyType.equalsIgnoreCase("hydro")){
+            return 60;
+        }
+        else if (this.energyType.equalsIgnoreCase("biomass")){
+            return 30;
+        }
+        else if (this.energyType.equalsIgnoreCase("geothermal")){
+            return 50;
+        }
+        else if (this.energyType.equalsIgnoreCase("ocean")){
+            return 10;
+        }
+        else{
+            return -1;
+        }
     }
-
-    // public double calculateEnergyCost()
-    // {
-
-    // }
 
     // public void displayInfo(){
     //     System.out.println("Type of Renewable Energy: " + getType());
     //     System.out.println("Limitation Renewable Energy: " + getLimitations());
     //     System.out.println("Benefit of Renewable Energy: " + getBenefits());
 
-    }
+    // }
 }
