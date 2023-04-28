@@ -42,9 +42,10 @@ public class AdaptationStrategies {
     }
 
     public void displayInfo(){
-        System.out.println("Risk: " + setBenefits());
-        System.out.println("Strategies: " + setSuccessRate());
-        System.out.println("Strategies: " + setLimitations());
+        System.out.println("Strategy Name\n: " + getStrategyName());
+        System.out.println("Benefits:\n" + getBenefits());
+        System.out.println("Limitations\n: " + getLimitations());
+        System.out.println("Strategies\n: " + getSuccessRate());
 
     }
 

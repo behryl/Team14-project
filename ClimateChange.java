@@ -16,7 +16,7 @@ public class ClimateChange {
         listOfRenewableEnergies.add(solar);
         listOfRenewableEnergies.add(wind);
 
-        SustainableDevelopment sdg1 = new SustainableDevelopment( "null", "null", 0, "null", "null","null", 0);
+        SustainableDevelopment sdg1 = new SustainableDevelopment()
         SustainableDevelopment sdg3 = new SustainableDevelopment( "null", "ull", 0, "null", "null","null", 0);
         listOfSDGs.add(sdg3);
         listOfSDGs.add(sdg1);
