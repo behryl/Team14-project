@@ -60,8 +60,8 @@ public class RenewableEnergy extends AdaptationStrategies {
     }
 
     public void displayInfo(){
-        System.out.println("Type of Renewable Energy: " + getEnergyType());
-        System.out.println("Benefits of "+getEnergyType()+" energy: " + getBenefits());
-        System.out.println("Limitations of "+getEnergyType()+" energy: " + getLimitations());
+        System.out.println("Type of Renewable Energy: \n" + getEnergyType());
+        System.out.println("Benefits of "+getEnergyType()+" energy\n: " + getBenefits());
+        System.out.println("Limitations of "+getEnergyType()+" energy\n: " + getLimitations());
     }
 }
