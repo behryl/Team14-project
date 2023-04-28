@@ -33,6 +33,8 @@ public class ClimateChange {
         String userInput3;
         int userInput1;
         System.out.println("------------------------------------------------------------------------");
+
+        System.out.println("------------------------------------------------------------------------");
         do{
         System.out.println("What solution do you want to learn about today?\n1- Sustainable Development\n2- Renewable Energy\n3- Environmental Policy");
 
